@@ -31,3 +31,11 @@ The CRX host and port can be specified on the command line with:
 mvn -Dcrx.host=otherhost -Dcrx.port=5502 <goals>
 
 
+Taglib - Tag Handler
+--------------------
+- Create a java class, called Tag Handler
+- Extend one of these classes - SimpleTagSupport, TagSupport or BodyTagSupport.
+
+Taglib - TLD
+------------
+- Define a tag library by a tag library descriptor (.tld) file.
