@@ -10,5 +10,6 @@
   <body>
 
     <tag:printTime/>
+    <tag:setStatusCode/>
   </body>
 </html>

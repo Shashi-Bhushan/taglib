@@ -20,4 +20,10 @@
       <rtexprvalue>true</rtexprvalue>
     </attribute>
   </tag>
+  <tag>
+    <description>Set Status Code</description>
+    <name>setStatusCode</name>
+    <tag-class>com.github.aem.tag.SetResponseTag</tag-class>
+    <body-content>empty</body-content>
+  </tag>
 </taglib>
