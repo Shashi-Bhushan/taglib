@@ -13,5 +13,16 @@
 
     <tag:printTime/>
     <tag:printTime className = "${name}"/>
+
+    <hr/>
+    Before Generated Table
+    <br/>
+    <tag:generateTable heading="Generated Table" colspan="5">
+      11,12,13,14,15;
+      16,17,18,19,10;
+    </tag:generateTable>
+    After Generated Table
+    <hr/>
+
   </body>
 </html>
