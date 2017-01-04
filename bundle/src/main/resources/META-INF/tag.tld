@@ -15,7 +15,7 @@
     <body-content>empty</body-content>
     <attribute>
       <description>Name Variable</description>
-      <name>name</name>
+      <name>className</name>
       <required>false</required>
       <rtexprvalue>true</rtexprvalue>
     </attribute>

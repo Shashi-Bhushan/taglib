@@ -25,7 +25,10 @@ public class SimpleTagSupportImpl extends SimpleTagSupport {
   public void doTag() throws JspException, IOException {
     JspWriter writer = getJspContext().getOut();
 
-    writer.write("Hello World");
-    writer.write("Class name is : " + this.className + " and time is : " + Calendar.getInstance().getTime().toString());
+    if(this.className != null) {
+      writer.write("Class name is : " + this.className + " and time is : " + Calendar.getInstance().getTime().toString() + "<br/>");
+    } else {
+      writer.write("Time is : " + Calendar.getInstance().getTime().toString() + "<br/>");
+    }
   }
 }
