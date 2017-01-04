@@ -4,7 +4,7 @@ import javax.servlet.jsp.JspException;
 import javax.servlet.jsp.JspWriter;
 import javax.servlet.jsp.tagext.SimpleTagSupport;
 import java.io.IOException;
-import java.time.LocalDateTime;
+import java.util.Calendar;
 
 /**
  * Created by Shashi Bhushan on 4/1/17.
@@ -26,6 +26,6 @@ public class SimpleTagSupportImpl extends SimpleTagSupport {
     JspWriter writer = getJspContext().getOut();
 
     writer.write("Hello World");
-    writer.write("Class name is : " + this.className + " and time is : " + LocalDateTime.now().toString());
+    writer.write("Class name is : " + this.className + " and time is : " + Calendar.getInstance().getTime().toString());
   }
 }
