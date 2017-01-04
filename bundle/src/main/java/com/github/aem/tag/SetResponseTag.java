@@ -1,6 +1,7 @@
 package com.github.aem.tag;
 
 import javax.servlet.ServletResponse;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.jsp.JspException;
 import javax.servlet.jsp.PageContext;
 import javax.servlet.jsp.tagext.SimpleTagSupport;
@@ -15,8 +16,8 @@ public class SetResponseTag extends SimpleTagSupport {
   public void doTag() throws JspException, IOException {
     PageContext pageContext = (PageContext)getJspContext();
 
-    ServletResponse response = pageContext.getResponse();
+    HttpServletResponse response = (HttpServletResponse) pageContext.getResponse();
 
-    pageContext.getResponse().set
+    response.setStatus(HttpServletResponse.SC_NOT_FOUND);
   }
 }
